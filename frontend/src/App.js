@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import Header from "./components/Header";
-import Index from "./components/LeftSideBar";
+import LeftSideBar from "./components/LeftSideBar";
 import MainContent from "./components/MainContent";
 import Footer from "./components/Footer";
 
@@ -10,7 +10,7 @@ class App extends Component {
     return (
       <div className="app-wrapper">
         <Header/>
-        <Index/>
+        <LeftSideBar/>
         <MainContent/>
         <Footer/>
       </div>
