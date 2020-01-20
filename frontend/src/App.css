@@ -1,24 +1,25 @@
-.App {
-  text-align: center;
+.app-wrapper {
+    display: grid;
+    grid-template-rows: 60px 1fr 60px;
+    grid-auto-columns: 2fr 10fr;
+    grid-template-areas:
+        "header header"
+        "left-side-bar-wrapper main-content-wrapper"
+        "footer footer";
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+header {
+    grid-area: header;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+.left-side-bar-wrapper {
+    grid-area: left-side-bar-wrapper;
 }
 
-.App-intro {
-  font-size: large;
+.main-content-wrapper {
+    grid-area: main-content-wrapper;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+footer {
+    grid-area: footer;
 }
